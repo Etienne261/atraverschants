@@ -1,0 +1,47 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	{{song.name}}
+	-
+	{{ parent() }}
+{% endblock %}
+
+{% block body %}
+
+	<h1 class="text-center my-4">RESSOURCES DE LA CHANSON :
+		{{song.name}}</h1>
+	<section class="example-wrapper">
+		<a href="{{path('ressource_add')}}" class="btn ms-4">Ajouter une ressource
+			<i class="fa-solid fa-plus"></i>
+		</a>
+		{% for resource in song.resources %}
+
+			<div class="mx-4 border">
+				<a href="{{path('ressource_show', {id:resource.id})}}" class="d-flex justify-content-center py-4">
+					<i class="fa-solid fa-play mx-4 fa-xl py-2"></i>
+					Ressource :{{ resource.name }}</a>
+			</div>
+		{% endfor %}
+		<div class="d-flex justify-content-center">
+			<a href="{{path('ressource_record')}}" class="btn">S'ENREGISTRER</a>
+		</div>
+	</section>
+
+	<div class="d-flex justify-content-start example-wrapper">
+		<a href="{{path('song_delete', {id:song.id})}}" class="ms-4">Supprimer la chanson
+			{{song.name}}
+			<i class="fa-solid fa-trash"></i>
+		</a>
+	</div>
+	<div class="d-flex justify-content-start example-wrapper my-2">
+		<a href="{{path('song_edit', {id:song.id})}}" class="ms-4">Editer la chanson
+			{{song.name}}
+			<i class="fa-solid fa-pen-to-square"></i>
+		</a>
+	</div>
+	<div class="example-wrapper d-flex justifycontent-center">
+		<a href="{{path('song_index')}}" class="btn">Revenir aux chansons
+			<i class="fa-solid fa-rotate-left"></i>
+		</a>
+	</div>
+{% endblock %}

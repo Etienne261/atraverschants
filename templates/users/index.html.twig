@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Profil Utilisateur
+{% endblock %}
+
+{% block body %}
+
+	<div class="example-wrapper">
+		<h1>Hello
+			{{ app.user.firstname }}!</h1>
+
+		<p>Nom :
+			{{ app.user.lastname }}</p>
+		<p>Prénom :
+			{{ app.user.firstname }}</p>
+		<p>E-mail :
+			{{ app.user.email }}</p>
+	</div>
+{% endblock %}
