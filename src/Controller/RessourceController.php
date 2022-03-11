@@ -34,7 +34,7 @@ class RessourceController extends AbstractController
     {
         $em = $doctrine->getManager();
         $resource = new Resource();
-        $form = $this->createForm(ResourceType::class, $resource);/*pour hydrater l'objet le formulaire hydrate le projet*/
+        $form = $this->createForm(ResourceType::class, $resource);/*pour hydrater l'objet, le formulaire hydrate le projet*/
         $form->handleRequest($request);
         if ($form->isSubmitted() && $form->isValid()) {
             //enregistrer en bdd

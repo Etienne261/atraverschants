@@ -357,7 +357,6 @@ footer .hov:hover, footer i:hover{
     section .photo button {
         position: static !important;
     }
-
 }
 @media screen and (max-width: 1180px) {
     #main-header .navbar-links{
@@ -404,7 +403,6 @@ footer .hov:hover, footer i:hover{
             font-size:7rem;
         }
 }
-
 @media screen and (max-width: 768px) {
     section .text {
     width: 100% !important;
@@ -415,8 +413,10 @@ footer .hov:hover, footer i:hover{
     .toconnect{
         width: 80% !important;
     }
+    section .voice{
+        flex-direction: column;
+    }
 }
-
 @media screen and (max-width: 560px) {
     .button_position{
         z-index: 1;
