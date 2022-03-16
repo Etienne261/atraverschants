@@ -416,6 +416,11 @@ footer .hov:hover, footer i:hover{
     section .voice{
         flex-direction: column;
     }
+    footer h3, footer p{
+        display: flex;
+        justify-content: center;
+
+    }
 }
 @media screen and (max-width: 560px) {
     .button_position{
@@ -436,5 +441,10 @@ footer .hov:hover, footer i:hover{
     .fsttg{
         font-size:4rem;
         margin-right: 0rem;
+    }
+    footer h3, footer p{
+        display: flex;
+        justify-content: center;
+
     } 
 }
