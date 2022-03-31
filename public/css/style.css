@@ -7,6 +7,15 @@
     src: url(../../Poppins/Poppins-Regular.ttf);
 }
 
+@font-face{
+    font-family:"Spectral-Regular";
+    src: url(../../Spectral/Spectral-Regular.ttf);
+}
+
+header{
+    font-family:"Spectral-Regular";
+
+}
 body{
     margin:0;
     font-family: var(--typo);

@@ -26,7 +26,7 @@ class BlogController extends AbstractController
     public function index(ManagerRegistry $doctrine): Response
     {
         $repository = $doctrine->getRepository(Blog::class);
-        $blogs = $repository->findBy([],['id'=>'ASC']);
+        $blogs = $repository->findBy([],['id'=>'ASC'],3);
         return $this->render('blog/index.html.twig', ['blogs' => $blogs]);
     }
 
