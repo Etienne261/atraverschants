@@ -19,9 +19,7 @@ class ContactController extends AbstractController
     public function index(Request $request, MailerInterface $mailer)
     {
         $form = $this->createForm(ContactType::class);
-
         $form->handleRequest($request);
-
 
         if($form->isSubmitted() && $form->isValid()) {
 
@@ -35,8 +33,6 @@ class ContactController extends AbstractController
                     $contactFormData['Message'],
                     'text/plain');
             $mailer->send($message);
-
-
 
 
             $this->addFlash('success', 'Your message has been sent');

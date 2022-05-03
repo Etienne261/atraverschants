@@ -37,9 +37,12 @@
 
 				<input type="hidden" id="contact__token" name="contact[_token]" value="eb69481768fe04d046778c134aef.29-hwCdcyd1f0Gzb_DdKvddem-r2Ex3cJobMQPYf9-M.tYDXlEAZ8ZhqjwqMmkJzirkNzrCBYXGpR-OCdJwouqyqkcCkHw-xriipDw">
 				<div class="form-group example-wrapper d-flex justify-content-center">
-					<input type="submit" value="Envoyer" class="btn py-3 px-5">
+					<input type="submit" value="Envoyer" class="btn py-3 px-5" name="contact[save]">
 				</div>
 			</div>
 		</div>
 	</div>
+	{% for message in app.flashes('success') %}
+  		<p>{{ message }}</p>
+	{% endfor %}
 </section>{% endblock %}

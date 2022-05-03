@@ -8,6 +8,7 @@ use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
+use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 
 class ContactType extends AbstractType
 {
@@ -19,8 +20,11 @@ class ContactType extends AbstractType
             ->add('lastname')
             ->add('phone')
             ->add('message', TextareaType::class, [
-                'attr' => ['rows' => 5],
-            ])
+                'attr' => ['rows' => 5] ])
+            ->add('save', SubmitType::class, [
+                    'label' => 'Valider'
+                 ])
+           
         ;
     }
 
