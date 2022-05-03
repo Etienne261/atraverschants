@@ -275,12 +275,9 @@ section .photo button:hover {
     position: inherit;
 }
 .supaview__copy{
-    padding: 0 25%;
-    margin: 0;
+    margin: 0 5%;
 }
-.supaview__copy textarea{
-    margin: 1rem 0.5rem;
-}
+
 .supaview__rating>input:checked~label,
 .supaview__rating:not(:checked)>label:hover,
 .supaview__rating:not(:checked)>label:hover~label {
@@ -313,18 +310,8 @@ section .photo button:hover {
     flex-wrap: wrap;
 }
 
-&__gradient {
-    position: absolute;
-    right: 50px;
-    top: 0;
-    z-index: -1;
-
-    display: block;
-    height: 1100px;
-    width: 1100px;
-    transform: translate(50%, -50%);
-    background-image: radial-gradient(rgba(#6ECB90, 0.2) 15%, #16181A 60%);
-}
+.supaviews_copy {
+    margin: 0 0.5rem;
 }
 
 .supaview__copy input,
@@ -341,8 +328,8 @@ section .photo button:hover {
 
 .supaview,
 .supaerror {
-    margin: 20px;
-    padding: 25px;
+    margin: 0.7rem;
+    padding: 0;
 }
 
 .supaview {
