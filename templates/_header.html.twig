@@ -4,32 +4,32 @@
 			<img src="{{ asset('img/logo.png') }}" alt="Logo - A TRAVERS CHANTS">
 		</a>
 	</div>
-	<div class="col-9 flex-wrap py-4 menu collapse navbar-collapse justify-content-end">
+	<nav class="col-9 flex-wrap py-4 menu collapse navbar-collapse justify-content-end">
 		<div class="clef col-2">
 			<img src="{{asset('img/clef.png')}}" alt="clef de sol" class="pt-4 mb-4">
 		</div>
 		<div class="line col-10">
-			<nav class="navbar-links me-4" type="hidden">
+			<div class="navbar-links me-4" type="hidden">
 				<label type="hidden ">|</label>
-			</nav>
+			</div>
 		</div>
 		<div class="firstline col-10" id="navbarText">
-			<nav class="navbar-links  me-2">
+			<div class="navbar-links  me-2">
 				<a href="{{ path('app_index') }}" class="text-center">ACCUEIL</a>
 				<a href="{{ path('app_adult') }}" class="text-center">CHOEUR ADULTES</a>
 				<a href="{{ path('app_children') }}" class="text-center">CHOEUR ENFANTS</a>
 				<a href="{{ path('app_voix') }}" class="pe-4 text-center">LES VOIX</a>
-			</nav>
+			</div>
 		</div>
 		<div class="secondline col-10">
-			<nav class="navbar-links me-2">
+			<div class="navbar-links me-2">
 				<a href="{{ path('app_events') }}" class="text-center">EVENEMENTS/CONCERTS</a>
 				<a href="{{ path('blog_index') }}" class="text-center">BLOG</a>
 				<a href="https://www.spreadshirt.fr/personnaliser/v%C3%AAtements?affiliateID=1209000&gclid=EAIaIQobChMIoY_Lntip9gIVT9nVCh3lOwPNEAAYASAAEgLsC_D_BwE" target="_blank" class="text-center">BOUTIQUE (A VENIR)</a>
-			</nav>
+			</div>
 		</div>
 		<div class="thirdline col-10">
-			<nav class="navbar-links me-4">
+			<div class="navbar-links me-4">
 				<a href="{{ path('app_program') }}" class="text-center">PROGRAMME</a>
 				{% if is_granted('IS_AUTHENTICATED_REMEMBERED') %}
 					<a href="{{ path('song_index') }}">CHANTE !</a>
@@ -39,16 +39,16 @@
 					<a href="{{ path('login') }}" class="text-center">CONNEXION</a>
 					<a href="{{ path('app_register') }}" class="pe-4 text-center">INSCRIPTION</a>
 				{% endif %}
-			</nav>
+			</div>
 		</div>
 		<div class="col-10">
-			<nav class="me-4 linebas" type="hidden">
+			<div class="me-4 linebas" type="hidden">
 				<label type="hidden ">|</label>
-			</nav>
+			</div>
 		</div>
-	</div>
+	</nav>
 	<div class="container py-0">
-		<button class="navbar-toggler bg-light button_position" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+		<button class="navbar-toggler button_position" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
 		<div class="collapse navbar-collapse justify-content-end color_burger" id="navbarText">

@@ -1,16 +1,16 @@
 <footer>
 	<div class="row">
 		<div class="col-12 col-md-4 col-lg-4 my-4">
-			<h3 class="ms-4">C'est ICI :</h3>
+			<h5 class="ms-4 text-center">C'est ICI :</h5>
 			<p class="ms-4">rue du grand Pont
-								74270 FRANGY</p>
+												74270 FRANGY</p>
 		</div>
 		<div class="col-12 col-md-4 col-lg-4 my-4">
-			<h3>E-mail :
+			<h5 class="text-center">E-mail :
 				<a href="{{path('contact_index')}}" class="text-light">
 					<strong class="hov">contact@atraverschants.fr</strong>
 				</a>
-			</h3>
+			</h5>
 			<p class="d-flex justify-content-around my-4">
 				<a href="https://fr-fr.facebook.com/AtraversChantsFrangy74/" target="_blank">
 					<i class="fa-brands fa-facebook-square"></i>
@@ -19,19 +19,28 @@
 					<i class="fa-brands fa-youtube-square"></i>
 				</a>
 				<a href="https://www.instagram.com/frangy_haute_savoie/" target="_blank">
-				<i class="fa-brands fa-instagram-square"></i>
+					<i class="fa-brands fa-instagram-square"></i>
 				</a>
 			</p>
 		</div>
 		<div class="col-12 col-md-4 col-lg-4 my-4">
+			<a href="{{ path('app_index') }}">
+				<h5 class="text-center hov">ACCUEIL</h5>
+			</a>
 			<a href="{{ path('contact_index') }}">
-				<h3 class="text-center hov">CONTACT</h3>
+				<h5 class="text-center hov">CONTACT</h5>
 			</a>
 			<a href="{{ path('app_tarif') }}">
-				<h3 class="text-center hov">TARIFS</h3>
+				<h5 class="text-center hov">TARIFS</h5>
+			</a>
+			<a href="{{ path('app_voix') }}">
+				<h5 class="text-center hov">LES VOIX</h5>
+			</a>
+			<a href="{{ path('app_program') }}">
+				<h5 class="text-center hov">PROGRAMME</h5>
 			</a>
 			<a href="{{ path('app_about') }}">
-			<h3 class="text-center hov">A PROPOS</h3>
+				<h5 class="text-center hov">A PROPOS</h5>
 			</a>
 		</div>
 	</div>
