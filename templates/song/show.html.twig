@@ -9,24 +9,25 @@
 {% block body %}
 
 	<h1 class="text-center my-4">RESSOURCES DE LA CHANSON :
-		{{song.name}}</h1>
-	<a href="{{path('ressource_add')}}" class="btn ms-4">Ajouter une ressource
-		<i class="fa-solid fa-plus"></i>
-	</a>
-	<section class="example-wrapper">
+		{{song.name}}
+	</h1>
+	<div class="example-wrapper">
+		<a href="{{path('ressource_add')}}" class="btn ms-4">Ajouter une ressource
+			<i class="fa-solid fa-plus"></i>
+		</a>
+	</div>
+	<section id="song_ressources" class="example-wrapper">
 		{% for resource in song.resources %}
-
 			<div class="mx-4 border">
-				<a href="{{path('ressource_show', {id:resource.id})}}" class="d-flex justify-content-center py-4">
+				<a href="{{path('ressource_show', {id:resource.id})}}" class="d-flex justify-content-center py-4 mx-auto text-uppercase">
 					<i class="fa-solid fa-play mx-4 fa-xl py-2"></i>
-					Ressource :{{ resource.name }}</a>
+					{{ resource.name }}</a>
 			</div>
 		{% endfor %}
-		<div class="d-flex justify-content-center">
-			<a href="{{path('ressource_record')}}" class="btn">S'ENREGISTRER</a>
-		</div>
 	</section>
-
+	<div class="d-flex justify-content-center example-wrapper">
+		<a href="{{path('ressource_record')}}" class="btn">S'ENREGISTRER</a>
+	</div>
 	<div class="d-flex justify-content-start example-wrapper">
 		<a href="{{path('song_delete', {id:song.id})}}" class="ms-4">Supprimer la chanson
 			{{song.name}}

@@ -447,11 +447,27 @@ section .photo button:hover {
 
 
 /* customisation des ressources d'une chanson*/
+#song_ressources{
+    display: flex;
+    height: 50%;
+}
 .example-wrapper .border {
     border-top: 2px solid var(--dark);
     border-bottom: 2px solid var(--dark);
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    display: flex;
+}
+.fa-play:before {
+    margin-left: calc(100%/3) !important;
 }
 
+
+.example-wrapper .border i{
+    margin: 0 auto 1rem;
+    text-align: center;
+    display: flex;
+}
 .example-wrapper .border:nth-child(even) a {
     color: var(--light);
     transition: 0.5s ease;
@@ -471,7 +487,7 @@ section .photo button:hover {
 }
 
 .example-wrapper .border:nth-child(even) {
-    background-color: var(--dark);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 10%, rgba(0,0,0,1) 40%, rgba(0,0,0,1) 100%);
     transition: 0.5s ease;
 
 }
