@@ -10,10 +10,10 @@
 
 	<h1 class="text-center my-4">RESSOURCES DE LA CHANSON :
 		{{song.name}}</h1>
+	<a href="{{path('ressource_add')}}" class="btn ms-4">Ajouter une ressource
+		<i class="fa-solid fa-plus"></i>
+	</a>
 	<section class="example-wrapper">
-		<a href="{{path('ressource_add')}}" class="btn ms-4">Ajouter une ressource
-			<i class="fa-solid fa-plus"></i>
-		</a>
 		{% for resource in song.resources %}
 
 			<div class="mx-4 border">

@@ -8,6 +8,7 @@
 	<section class="register row mx-auto my-4">
 		<div class="photo col-8 my-4 mx-auto">
 			<div class="bg-white p-0 contact-form">
+				{{ form_start(our_form) }}
 				<div class="form-group">
 					<form name="contact" method="post">
 						<div class="mb-3">
@@ -34,11 +35,10 @@
 					</div>
 
 				</div>
-
-				<input type="hidden" id="contact__token" name="contact[_token]" value="eb69481768fe04d046778c134aef.29-hwCdcyd1f0Gzb_DdKvddem-r2Ex3cJobMQPYf9-M.tYDXlEAZ8ZhqjwqMmkJzirkNzrCBYXGpR-OCdJwouqyqkcCkHw-xriipDw">
 				<div class="form-group example-wrapper d-flex justify-content-center">
 					<input type="submit" value="Envoyer" class="btn py-3 px-5" name="contact[save]">
 				</div>
+				{{ form_end(our_form) }}
 			</div>
 		</div>
 	</div>
