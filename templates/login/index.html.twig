@@ -15,7 +15,7 @@
 				<input type="password" name="_password" id="password" placeholder="MOT DE PASSE" class="mb-4">
 				<i class="far fa-eye" id="togglePassword"></i>
 				{# If you want to control the URL the user is redirected to on success #}
-				<input type="hidden" name="{{ path('app_index') }}" value="/app"/> 
+				<input type="hidden" name="{{ path('app_index') }}" value="/app"/>
 				<a href="{{ path('app_index') }}" class="d-flex justify-content-center btn">
 					<button type="submit" class="btn">
 						LOGIN
@@ -26,6 +26,16 @@
 		<p class="text-center mt-4">Pas encore inscrit?
 			<a href="{{ path('app_register') }}">INSCRIS-TOI</a>
 		</p>
-
 	</section>
+	<script>
+		const togglePassword = document.querySelector('#togglePassword');
+		const password = document.querySelector('#password');
+
+		togglePassword.addEventListener('click', function (e) { // changer l'attribut type
+		const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+		password.setAttribute('type', type);
+		// changer l'oeil slash icon
+		this.classList.toggle('fa-eye-slash');
+		});
+	</script>
 {% endblock %}
