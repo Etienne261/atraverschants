@@ -27,6 +27,7 @@
 			<a href="{{ path('app_register') }}">INSCRIS-TOI</a>
 		</p>
 	</section>
+	{% block javascripts %}
 	<script>
 		const togglePassword = document.querySelector('#togglePassword');
 		const password = document.querySelector('#password');
@@ -38,4 +39,5 @@
 		this.classList.toggle('fa-eye-slash');
 		});
 	</script>
+	{% endblock %}
 {% endblock %}

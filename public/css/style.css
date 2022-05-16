@@ -41,6 +41,9 @@ header button:before {
     margin-top: -2.3rem;
 }
 
+p{
+    text-align: justify !important;
+}
 /*CONTAINER*/
 .container {
     max-width: var(--max-width);
