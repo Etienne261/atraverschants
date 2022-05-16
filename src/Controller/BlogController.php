@@ -109,7 +109,7 @@ class BlogController extends AbstractController
                 $img->setName($fichier);
                 $blog->addImageBlog($img);
             }
-            // ... persist the $product variable or any other work
+            // ... persiste la variable $blog
             $em->persist($blog);
             $em->flush();
             return $this->redirectToRoute('blog_show',['id'=>$id]);

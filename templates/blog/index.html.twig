@@ -13,9 +13,13 @@
 		{% for blog in blogs %}
 			<section class="row m-4 px-4">
 				<div class="text col-12 col-md-6 col-lg-6 my-4">
-					<a href="{{path('blog_show', {id:blog.id})}}" class="btn">
-						<h2 class="text-center">{{ blog.tittle }}</h2>
-					</a>
+					{% if is_granted('ROLE_ADMIN') %}
+						<a href="{{path('blog_show', {id:blog.id})}}" class="btn">
+							<h2 class="text-center">{{ blog.tittle }}</h2>
+						</a>
+					{% else %}
+						<h2 class="text-center my-4">{{ blog.tittle }}</h2>
+					{% endif %}
 					<p class="">{{ blog.content }}</p>
 
 				</div>
