@@ -747,6 +747,9 @@ footer i:hover {
 }
 
 @media screen and (max-width: 560px) {
+    img{
+        height: auto !important;
+    }
     .button_position {
         z-index: 1;
         transform: translate(250%, -150px);

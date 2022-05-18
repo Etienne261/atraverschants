@@ -15,13 +15,9 @@
 		{% for song in songs %}
 			<section class="row m-4 px-4">
 				<div class="text col-12 col-md-6 col-lg-6 my-4">
-					{% if is_granted('ROLE_ADMIN') %}
 						<a href="{{path('song_show', {id:song.id})}}" class="btn">
 							<h2 class="text-center">{{ song.name }}</h2>
 						</a>
-					{% else %}
-						<h2 class="text-center my-4">{{ song.name }}</h2>
-					{% endif %}
 					<p class="text-center">{{ song.content }}</p>
 
 				</div>
