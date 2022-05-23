@@ -447,7 +447,18 @@ section .photo button:hover {
 .supaerror {
     background-color: #E56460;
 }
-
+/*customisation Events et concerts*/
+.event{
+    border-radius: 10px;
+    perspective: 25rem;
+    cursor: pointer;
+    transform: rotateY(-20deg) rotateX(15deg);
+    transition: 0.7s;
+}
+.event:hover{
+    transform: translateY(30px)  rotateY(-20deg) rotateX(15deg) scale(1.2);
+    z-index:3; 
+}
 
 /* customisation des ressources d'une chanson*/
 #song_ressources{

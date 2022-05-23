@@ -33,14 +33,9 @@ class ContactController extends AbstractController
                     $contactFormData['Message'],
                     'text/plain');
             $mailer->send($message);
-
-
-            $this->addFlash('success', 'Your message has been sent');
-
-            return $this->redirectToRoute('app_index');
+            $this->addFlash('success', 'Vore message a été envoyé');
+            return $this->redirectToRoute('contact');
         }
-
-
 
         return $this->render('contact/index.html.twig', [
             'our_form' => $form->createView()
