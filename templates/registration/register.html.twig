@@ -36,11 +36,12 @@
 			<div>
 				<label for="zip_code" class="text-dark">CODE POSTAL (non-obligatoire)</label>
 				<input type="text" class="text-dark" name="zip_code" id="zip_code">
+				<button type="button" class="text-dark my-4 mx-4 btn" onclick="loadDoc()">Chercher</button>
 			</div>
 			<div>
-				<button type="button" class="text-dark mx-auto py-1 my-4 btn" onclick="loadDoc()">Chercher</button>
-				<label for="ville" class="text-dark">VILLE</label>
-				<select name="city" class="text-dark mb-4" id="city"></select>
+				
+				<label for="ville" class="text-dark d-flex">VILLE</label>
+				<select name="city" class="text-dark mb-4 d-flex justify-content-end" id="city"></select>
 			</div>
 			<div class="row my-4 text-dark">
 				<div class="mb-3"><div class="form-check"><input type="checkbox" id="registration_form_agreeTerms" name="registration_form[agreeTerms]" required="required" class="form-check-input" value="1">

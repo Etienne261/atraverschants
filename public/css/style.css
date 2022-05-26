@@ -73,6 +73,7 @@ header a {
 
 header a:hover {
     color: var(--accent);
+    outline: 0;
 }
 
 #main-header .logo img {
@@ -199,6 +200,7 @@ section .voice .btn:hover,
 .example-wrapper .btn:hover {
     color: var(--accent);
     background-color: var(--light);
+    outline: 0;
 }
 
 .position {
@@ -219,6 +221,11 @@ section .photo button {
 section .photo button:hover {
     color: var(--accent);
     background-color: var(--light);
+    outline: 0;
+}
+/*CONTACT*/
+#contact_save{
+    margin-left: 12%;
 }
 
 /*AVIS*/
@@ -651,6 +658,7 @@ footer i {
 footer .hov:hover,
 footer i:hover {
     color: var(--accent);
+    outline: 0;
 }
 
 @media screen and (max-width: 1380px) {
@@ -721,6 +729,7 @@ footer i:hover {
     .navbar-light .navbar-nav .nav-link.active:hover,
     .navbar-light .navbar-nav .nav-link:hover {
         color: var(--accent) !important;
+        outline: 0;
     }
 
     .toconnect {
@@ -733,6 +742,10 @@ footer i:hover {
 }
 
 @media screen and (max-width: 768px) {
+    .supaview,.supaerror {
+        margin-left: 0;
+        margin-right: 0;
+    }
     section .text {
         width: 100% !important;
     }

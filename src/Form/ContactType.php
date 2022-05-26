@@ -36,9 +36,10 @@ class ContactType extends AbstractType
                 'attr' => ['rows' => 5] ],
                 ['required' => true]
                 )
-            ->add('save', SubmitType::class, [
-                    'label' => 'Envoyer'
-                 ])
+            ->add('save', SubmitType::class,
+                ['label' => 'Envoyer'],
+                ['attr' => ['class' => 'save'] ]
+                )
            
         ;
     }
