@@ -20,7 +20,7 @@
 	</div>
 	<section id="song_ressources" class="example-wrapper">
 		{% for resource in song.resources %}
-			<div class="mx-4 border">
+			<div class="mx-1 border">
 				<a href="{{path('ressource_show', {id:resource.id})}}" class="d-flex justify-content-center py-4 mx-auto text-uppercase">
 					<i class="fa-solid fa-play mx-4 fa-xl py-2"></i>
 					{{ resource.name }}</a>

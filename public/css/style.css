@@ -473,11 +473,10 @@ section .photo button:hover {
     height: 50%;
 }
 .example-wrapper .border {
-    border-top: 2px solid var(--dark);
-    border-bottom: 2px solid var(--dark);
     writing-mode: vertical-lr;
     text-orientation: upright;
     display: flex;
+    width: 100px;
 }
 .fa-play:before {
     margin-left: calc(100%/3) !important;
@@ -489,42 +488,44 @@ section .photo button:hover {
     text-align: center;
     display: flex;
 }
-.example-wrapper .border:nth-child(even) a {
+.example-wrapper .border:nth-child(2) a,.example-wrapper .border:nth-child(4) a,.example-wrapper .border:nth-child(7) a,.example-wrapper .border:nth-child(9) a,.example-wrapper .border:nth-child(11) a {
     color: var(--light);
     transition: 0.5s ease;
 }
 
-.example-wrapper .border:nth-child(even) a:hover {
-    color: var(--dark);
+.example-wrapper .border:nth-child(2) a:hover,.example-wrapper .border:nth-child(4) a:hover,.example-wrapper .border:nth-child(7) a:hover,.example-wrapper .border:nth-child(9) a:hover,.example-wrapper .border:nth-child(11) a:hover {
+    color: var(--accent);
 }
 
-.example-wrapper .border:nth-child(odd) a {
+.example-wrapper .border:nth-child(1) a,.example-wrapper .border:nth-child(3) a,.example-wrapper .border:nth-child(5) a,.example-wrapper .border:nth-child(6) a,.example-wrapper .border:nth-child(8) a,.example-wrapper .border:nth-child(10) a,.example-wrapper .border:nth-child(12) a {
     color: var(--dark);
     transition: 0.5s ease;
 }
 
-.example-wrapper .border:nth-child(odd) a:hover {
+.example-wrapper .border:nth-child(1) a:hover,.example-wrapper .border:nth-child(3) a:hover,.example-wrapper .border:nth-child(5) a:hover,.example-wrapper .border:nth-child(6) a:hover,.example-wrapper .border:nth-child(8) a:hover,.example-wrapper .border:nth-child(10) a:hover,.example-wrapper .border:nth-child(12) a:hover {
     color: var(--light);
 }
 
-.example-wrapper .border:nth-child(even) {
+.example-wrapper .border:nth-child(2),.example-wrapper .border:nth-child(4),.example-wrapper .border:nth-child(7),.example-wrapper .border:nth-child(9),.example-wrapper .border:nth-child(11) {
     background: linear-gradient(0deg, rgba(255,255,255,1) 10%, rgba(0,0,0,1) 40%, rgba(0,0,0,1) 100%);
     transition: 0.5s ease;
 
 }
 
-.example-wrapper .border:nth-child(even):hover {
+.example-wrapper .border:nth-child(2):hover,.example-wrapper .border:nth-child(4):hover,.example-wrapper .border:nth-child(7):hover,.example-wrapper .border:nth-child(9):hover,.example-wrapper .border:nth-child(11):hover {
     background-color: var(--light);
 
 }
 
-.example-wrapper .border:nth-child(odd) {
+.example-wrapper .border:nth-child(1),.example-wrapper .border:nth-child(3),.example-wrapper .border:nth-child(5),.example-wrapper .border:nth-child(6),.example-wrapper .border:nth-child(8),.example-wrapper .border:nth-child(10),.example-wrapper .border:nth-child(12) {
     background-color: var(--light);
     transition: 0.5s ease;
 
 }
-
-.example-wrapper .border:nth-child(odd):hover {
+.example-wrapper .border:nth-child(1){
+    margin-left: 1.5rem !important;
+}
+.example-wrapper .border:nth-child(1):hover,.example-wrapper .border:nth-child(3):hover,.example-wrapper .border:nth-child(5):hover,.example-wrapper .border:nth-child(6):hover,.example-wrapper .border:nth-child(8):hover,.example-wrapper .border:nth-child(10):hover,.example-wrapper .border:nth-child(12):hover {
     background-color: var(--dark);
 
 }
