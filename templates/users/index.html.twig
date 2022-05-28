@@ -5,15 +5,16 @@
 
 {% block body %}
 
-	<div class="example-wrapper">
-		<h1>Hello
-			{{ app.user.firstname }}!</h1>
-
-		<p>Nom :
-			{{ app.user.lastname }}</p>
-		<p>Prénom :
+	<h1 class="text-center m-4">Bonjour
+		{{ app.user.firstname }}!</h1>
+	<section class="row m-4 px-0 px-md-2 px-lg-4 py-4">
+		<p><strong>Nom</strong> :
+			<span class="text-uppercase">{{ app.user.lastname }}</span></p>
+		<p><strong>Prénom</strong> :
 			{{ app.user.firstname }}</p>
-		<p>E-mail :
-			{{ app.user.email }}</p>
-	</div>
+		<p><strong>E-mail</strong> :
+			{{ app.user.email }}
+			<i class="fa-solid fa-pen-to-square"></i>
+		</p>
+	</section>
 {% endblock %}

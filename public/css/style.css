@@ -491,6 +491,8 @@ section .photo button:hover {
 .example-wrapper .border:nth-child(2) a,.example-wrapper .border:nth-child(4) a,.example-wrapper .border:nth-child(7) a,.example-wrapper .border:nth-child(9) a,.example-wrapper .border:nth-child(11) a {
     color: var(--light);
     transition: 0.5s ease;
+    font-weight: bolder;
+    align-items: center;
 }
 
 .example-wrapper .border:nth-child(2) a:hover,.example-wrapper .border:nth-child(4) a:hover,.example-wrapper .border:nth-child(7) a:hover,.example-wrapper .border:nth-child(9) a:hover,.example-wrapper .border:nth-child(11) a:hover {
@@ -500,6 +502,8 @@ section .photo button:hover {
 .example-wrapper .border:nth-child(1) a,.example-wrapper .border:nth-child(3) a,.example-wrapper .border:nth-child(5) a,.example-wrapper .border:nth-child(6) a,.example-wrapper .border:nth-child(8) a,.example-wrapper .border:nth-child(10) a,.example-wrapper .border:nth-child(12) a {
     color: var(--dark);
     transition: 0.5s ease;
+    font-weight: bolder;
+    align-items: center;
 }
 
 .example-wrapper .border:nth-child(1) a:hover,.example-wrapper .border:nth-child(3) a:hover,.example-wrapper .border:nth-child(5) a:hover,.example-wrapper .border:nth-child(6) a:hover,.example-wrapper .border:nth-child(8) a:hover,.example-wrapper .border:nth-child(10) a:hover,.example-wrapper .border:nth-child(12) a:hover {
@@ -578,7 +582,12 @@ section .connect {
     font-size: 1.2rem;
 }
 
-
+#gum{
+    width: 50%;
+}
+#recorded{
+    width: 50%;
+}
 video {
     vertical-align: top;
     --width: 25vw;
@@ -743,6 +752,9 @@ footer i:hover {
 }
 
 @media screen and (max-width: 768px) {
+    body{
+        overflow-x: hidden;
+    }
     .supaview,.supaerror {
         margin-left: 0;
         margin-right: 0;
@@ -761,6 +773,39 @@ footer i:hover {
 
     section .voice {
         flex-direction: column;
+    }
+
+    #song_ressources {
+        display: flex;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .example-wrapper .border {
+        writing-mode: inherit;
+        text-orientation: inherit;
+        width: 100%;
+        margin: 0 !important;
+    }
+
+    .example-wrapper .border:nth-child(1) {
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+        margin-left: 0 !important;
+    }
+    .example-wrapper .border:last-child {
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+
+    #gum{
+        width: 100%;
+    }
+    #recorded{
+        width: 100%;
+    }
+    video {
+        --width: 55vw;
     }
 
     footer h3,

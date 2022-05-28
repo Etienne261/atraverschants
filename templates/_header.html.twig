@@ -33,7 +33,7 @@
 				<a href="{{ path('app_program') }}" class="text-center">PROGRAMME</a>
 				{% if is_granted('IS_AUTHENTICATED_REMEMBERED') %}
 					<a href="{{ path('song_index') }}">CHANTE !</a>
-					<a href="{{ path('app_index') }}">PROFIL</a>
+					<a href="{{ path('users_index') }}">PROFIL</a>
 					<a href="{{ path('app_logout') }}">DECONNEXION</a>
 				{% else %}
 					<a href="{{ path('login') }}" class="text-center">CONNEXION</a>
@@ -82,7 +82,7 @@
 						<a class="nav-link text-light" href="{{ path('song_index') }}">CHANTE !</a>
 					</li>
 					<li class="nav-item main-menu-element">
-						<a class="nav-link text-light" href="{{ path('app_index') }}">PROFIL</a>
+						<a class="nav-link text-light" href="{{ path('users_index') }}">PROFIL</a>
 					</li>
 					<li class="nav-item main-menu-element">
 						<a class="nav-link text-light" href="{{ path('app_logout') }}">DECONNEXION</a>
