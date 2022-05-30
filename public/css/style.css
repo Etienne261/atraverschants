@@ -206,8 +206,19 @@ section .voice .btn:hover,
 .position {
     position: relative;
 }
-.marg{
+
+.apizip{
 display: initial;
+}
+
+.inscription button{
+    margin-top: 8% !important;
+    margin-left: 10% !important;
+}
+
+.apizip button{
+    margin-top: inherit !important;
+    margin-left: 1% !important;
 }
 
 section .photo button {
@@ -814,6 +825,11 @@ footer i:hover {
 
     video {
         --width: 55vw;
+    }
+
+    .inscription button{
+        margin-top: 45% !important;
+        position: inherit !important;
     }
 
     footer h3,

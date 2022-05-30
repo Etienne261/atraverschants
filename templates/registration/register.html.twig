@@ -11,7 +11,7 @@
 	<h1 class="text-center my-4">INSCRIPTION</h1>
 	<section class="register row mx-auto my-4">
 		<div
-			class="photo col-8 my-4 mx-auto">
+			class="photo col-8 my-4 mx-auto inscription">
 			{# 
 						<form name="registration_form" method="post">
 							<div>
@@ -65,7 +65,9 @@
 						</form> 
 						#}
 			{{ form_start(registrationForm) }}
-			<div class="marg">
+			
+			{{ form_end(registrationForm) }}
+			<div class="apizip">
 				<div>
 					<label for="zip_code" class="text-dark">CODE POSTAL (non-obligatoire)</label>
 					<input type="text" class="text-dark" name="zip_code" id="zip_code">
@@ -77,7 +79,6 @@
 					<select name="city" class="text-dark mb-4 d-flex justify-content-end" id="city"></select>
 				</div>
 			</div>
-			{{ form_end(registrationForm) }}
 		</div>
 	</section>
 	{% block javascripts %}
