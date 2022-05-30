@@ -206,6 +206,9 @@ section .voice .btn:hover,
 .position {
     position: relative;
 }
+.marg{
+display: initial;
+}
 
 section .photo button {
     position: absolute;
