@@ -807,6 +807,11 @@ footer i:hover {
     #recorded{
         width: 100%;
     }
+    section .connect {
+        padding-left: 3.5rem !important;
+        padding-right: 3.5rem !important;
+    }
+
     video {
         --width: 55vw;
     }
